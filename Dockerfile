@@ -1,5 +1,5 @@
 # Base image with maven installed already
-FROM eclipse-temurin:8u312-b07-jdk as builder
+FROM arm64v8/maven:3-openjdk-8-slim as builder
 
 # Copy whole project inside docker
 COPY . .
