@@ -9,7 +9,7 @@ RUN mvn clean package
 
 
 # Base image containing OpenJDK 8, maintained by RedHat
-FROM eclipse-temurin:8u312-b07-jre
+FROM eclipse-temurin:11.0.13_8-jre-alpine
 
 # Update apt repo and install sudo package
 RUN apk update && \
